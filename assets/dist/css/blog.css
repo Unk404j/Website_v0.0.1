@@ -185,6 +185,12 @@ i.fa-solid .fa-envelope {
   user-select: none;
 }
 
+@media (max-width: 480px) {
+  .main-menu{
+    font-size: 0.90rem;
+  }
+}
+
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
