@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <!-- Script pour gérer les modes de couleur -->
+    <script src="assets/js/color-modes.js"></script>
+
+    <!-- Métadonnées -->
+    <meta charset="utf-8"> <!-- Définit l'encodage des caractères en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Rendre le site responsive -->
+    <meta name="description" content=""> <!-- Description du site pour les moteurs de recherche -->
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors"> <!-- Auteur du site -->
+    <meta name="generator" content="Hugo 0.122.0"> <!-- Outil utilisé pour générer le site -->
+    
+    <!-- Titre de la page -->
+    <title>Bienvenu sur mon site web · Julien PABLO</title>
+    
+    <!-- Icône du site -->
+    <link rel="icon" href="assets/favicon.png" type="image/png"/>
+    
+    <!-- Lien canonique pour éviter les problèmes de contenu dupliqué -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
+
+    <!-- Feuilles de style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"> <!-- CSS de la bibliothèque DocSearch -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- CSS de Font Awesome pour les icônes -->
+    
+    <style>
+      /* Styles personnalisés pour les éléments de la page */
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none; /* Désactive la sélection de texte */
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem; /* Augmente la taille des images pour les écrans larges */
+        }
+      }
+
+      /* Styles pour le diviseur */
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1); /* Couleur de fond */
+        border: solid rgba(0, 0, 0, .15); /* Bordure */
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15); /* Ombre interne */
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem; /* Largeur de la barre verticale */
+        height: 100vh; /* Hauteur pleine de la fenêtre */
+      }
+
+      .bi {
+        vertical-align: -.125em; /* Alignement vertical des icônes */
+        fill: currentColor; /* Couleur de l'icône */
+      }
+
+      /* Styles pour le défilement des éléments de navigation */
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden; /* Désactive le défilement vertical */
+      }
+
+      .nav-scroller .nav {
+        display: flex; /* Utilise le modèle flex pour les éléments de navigation */
+        flex-wrap: nowrap; /* Empêche le retour à la ligne */
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto; /* Active le défilement horizontal */
+        text-align: center; /* Centre le texte */
+        white-space: nowrap; /* Empêche le retour à la ligne du texte */
+        -webkit-overflow-scrolling: touch; /* Optimisation pour le défilement tactile */
+      }
+
+      /* Styles pour les boutons */
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9; /* Couleur de fond */
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846; /* Valeurs RGB pour les ombres */
+
+        --bs-btn-font-weight: 600; /* Poids de la police */
+        --bs-btn-color: var(--bs-white); /* Couleur du texte */
+        --bs-btn-bg: var(--bd-violet-bg); /* Couleur de fond */
+        --bs-btn-border-color: var(--bd-violet-bg); /* Couleur de la bordure */
+        --bs-btn-hover-color: var(--bs-white); /* Couleur du texte au survol */
+        --bs-btn-hover-bg: #6528e0; /* Couleur de fond au survol */
+        --bs-btn-hover-border-color: #6528e0; /* Couleur de la bordure au survol */
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb); /* Couleur de l'ombre au focus */
+        --bs-btn-active-color: var(--bs-btn-hover-color); /* Couleur du texte en état actif */
+        --bs-btn-active-bg: #5a23c8; /* Couleur de fond en état actif */
+        --bs-btn-active-border-color: #5a23c8; /* Couleur de la bordure en état actif */
+      }
+
+ 
+    </style>
+
+    <!-- Police personnalisée pour ce modèle -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Styles personnalisés pour ce modèle -->
+    <link href="assets/dist/css/blog.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <!-- Conteneur principal -->
+    <div class="container color-main">
+      <header class="border-bottom lh-1 py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 text-left">
+            <!-- Logo du site -->
+            <a class="blog-header-logo text-body-emphasis text-decoration-none" href="#">Large</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Barre de navigation -->
+      <div class="nav-scroller py-1 mb-3 border-bottom">
+        <nav class="nav nav-underline justify-content-between">
+          <a class="nav-item nav-link" href="#experience">Expérience</a>
+          <a class="nav-item nav-link" href="#competence">Compétences</a>
+          <a class="nav-item nav-link" href="#contact">Contacts</a>
+          <a class="nav-item nav-link" href="broken.html">Casser le site</a>
+          <a class="sticky-top nav-item nav-link link-body-emphasis active" href="#"><i class="fa-solid fa-circle-up"></i></a>
+        </nav>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+        <div class="col-lg-6 px-0">
+          <!-- Titre principal -->
+          <h1 class="display-4">Julien PABLO</h1>
+          <p id="animatedText" class="lead my-3"></p> <!-- Texte animé -->
+          <p class="lead mb-0"><a id="experience" href="#experience" class="text-body-emphasis fw-bold">Voir mon expérience</a></p> <!-- Lien vers la section expérience -->
+        </div>
+      </div>
+
+      <div class="row g-5">
+        <div class="col-md-8">
+          <article class="blog-post">
+            <h2>Expérience professionnelle</h2>
+            <!-- Première expérience -->
+            <h3>Technicien d'exploitation</h3>
+            <p class="blog-post-meta"><a href="https://www.seatpi.com/" target="_blank">SEA TPI</a> (Prestation pour Inetum), Montpellier, France, 2022 - 2024 / 2021</p>
+            <p><b>Compétences :</b> Administration système Linux · Administration de bases de données · VMware vCenter · Script bash · Jenkins · Produits Docker · SQL · ServiceNow · Centreon · IBM TWS</p>
+            <ul>
+              <li>Résolution d’incidents techniques sur des machines Linux, AIX et Windows en respect des SLA imposés par le client.</li>
+              <li>Suivi des travaux d’intégration, d’exploitation et d’installation de nouvelles applications.</li>
+              <li>Réalisation de script d’automatisation de traitements techniques.</li>
+            </ul>
+          </article>
+          <hr class="featurette-divider">
+          <!-- Deuxième expérience -->
+          <article class="blog-post">
+            <h3>Technicien d'exploitation</h3>
+            <p class="blog-post-meta"><a href="https://www.u-pem.fr/" target="_blank">UPEM</a>, Marne-la-Vallée, France, 2020 - 2022</p>
+            <p><b>Compétences :</b> Administration système Linux · Administration de bases de données · Outils de supervision · PowerShell · VM</p>
+            <ul>
+              <li>Gestion de la plateforme d'intégration de l'université.</li>
+              <li>Réalisation de maintenance préventive et corrective sur les infrastructures.</li>
+              <li>Supervision et analyse de la performance des systèmes.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <!-- Section des compétences -->
+          <h2 id="competence">Compétences</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Node.js</li>
+            <li class="list-group-item">JavaScript</li>
+            <li class="list-group-item">PHP</li>
+            <li class="list-group-item">MySQL</li>
+            <li class="list-group-item">React.js</li>
+            <li class="list-group-item">HTML5 & CSS3</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- Section de contact -->
+    <div class="container mb-5" id="contact">
+      <h2>Contacts</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+    </div>
+
+    <!-- Pied de page -->
+    <footer class="blog-footer text-center">
+      <p><a href="#top">Retour en haut</a></p> <!-- Lien pour retourner en haut de la page -->
+      <p>Créé par <a id="nomorewebsite" href="https://github.com/julienpablo" target="_blank">Julien PABLO</a> | <a href="https://github.com/julienpablo">GitHub</a></p>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/dist/js/anim_text.js"></script> <!-- Script pour le texte animé -->
+  </body>
+</html>

@@ -1,0 +1,27 @@
+const txtAnim = document.querySelector('#animatedText');
+
+new Typewriter(txtAnim, {
+  deleteSpeed: 20
+})
+.changeDelay(50)
+.typeString('<')
+.typeString('?')
+.typeString('<span class="php-tag">php</span>')
+.typeString('<span class="php-text"> echo</span>')
+.typeString('<span class="php-string"> "Bonjour, je me présente Julien PABLO, 25 ans !";</span>')
+.pauseFor(300)
+.typeString('<br>')
+.typeString('<span class="php-comment">//</span>')
+.typeString('<span class="php-comment"> Étudiant en développement Full Stack, à Montpellier </span>')
+.pauseFor(300)
+.typeString('<br>')
+.typeString('<span class="php-text"> echo</span>')
+.typeString('<span class="php-string"> "Je recherche une alternance pour ma 3ème année";</span>')
+.pauseFor(300)
+.deleteChars(50)
+.typeString('<span class="php-string"> "Compétences : PHP, JavaScript, HTML/CSS, Linux";</span>')
+.pauseFor(500)
+.changeDelay(30)
+.deleteChars(50)
+.typeString('<span class="php-string"> "Je suis disponible dès maintenant pour un entretien !";</span>')
+.start()
