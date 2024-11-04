@@ -7,6 +7,11 @@
   font-size: 2.25rem;
 }
 
+
+.animation-box{
+  height: 25vh;
+}
+
 .blog-header-logo:hover {
   text-decoration: none;
 }
@@ -59,7 +64,7 @@ h6 {
 /*}*/
 
 .background-main {
-background-image: url("../../background.jpg");
+background-image: url("../../background_test.png");
   background-attachment: fixed;
   backdrop-filter: blur(3px) contrast(75%);
   background-repeat: repeat;
