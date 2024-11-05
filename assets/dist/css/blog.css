@@ -205,6 +205,10 @@ a#nomorewebsite {
   .main-menu {
     font-size: 0.70rem;
   }
+
+  .animation-box {
+    height: 35em;
+  }
 }
 
 @media (min-width: 768px) {
