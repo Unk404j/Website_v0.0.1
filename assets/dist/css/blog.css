@@ -157,7 +157,7 @@ h2 {
 /* === LIST STYLES === */
 
 .list-unstyled li a {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .list-unstyled li a:hover {
@@ -204,6 +204,12 @@ a#nomorewebsite {
 @media (max-width: 480px) {
   .main-menu {
     font-size: 0.60rem;
+  }
+
+  .fa-xl{
+    font-size: 1em;
+    line-height: .04167em;
+    vertical-align: -.125em;
   }
 
   .animation-box {
