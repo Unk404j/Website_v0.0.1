@@ -206,14 +206,17 @@ a#nomorewebsite {
     font-size: 0.60rem;
   }
 
-  /*.fa-xl{*/
-  /*  font-size: 1em;*/
-  /*  line-height: .04167em;*/
-  /*  vertical-align: -.125em;*/
-  /*}*/
+  .m-2.fa-xl{
+    margin: .2rem !important;
+    font-size: 1em;
+    line-height: .04167em;
+    vertical-align: -.125em;
+  }
+
+  }
 
   .animation-box {
-    height: 35em;
+    height: 30em;
   }
 }
 

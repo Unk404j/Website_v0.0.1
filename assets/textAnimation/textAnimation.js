@@ -10,8 +10,8 @@ new Typewriter(txtAnim, {
 // .typeString('<span class="php-text"> echo</span>')
 .typeString('<span class="php-tag"> <h1> Julien PABLO</h1></span>')
     .typeString('<ol class="list-unstyled">\n' +
-        '        <li><a href="https://www.linkedin.com/in/julien-pablo" target="_blank"><i class="fa-brands fa-linkedin fa-xl m-2" style="color: #0e76a8"></i>LinkedIn</a></li>\n' +
-        '        <li><a href="tel:+33641554827"><i class="fa-solid fa-mobile-screen-button fa-xl m-2" style="color: black"></i>06.41.55.48.27</a></li>\n' +
+        '        <li><a href="https://www.linkedin.com/in/julien-pablo" target="_blank"><i class="fa-brands fa-linkedin m-2 fa-xl" style="color: #0e76a8"></i>LinkedIn</a></li>\n' +
+        '        <li><a href="tel:+33641554827"><i class="fa-solid fa-mobile-screen-button m-2 fa-xl" style="color: black"></i>06.41.55.48.27</a></li>\n' +
         '        <li><a href="mailto:julien.pablo.pro@gmail.com" target="_blank"><i class="fa-solid fa-envelope m-2 fa-xl" style="color: white;"></i>julien.pablo.pro@gmail.com</a></li>\n' +
         '      </ol>')
     .pauseFor(300)
