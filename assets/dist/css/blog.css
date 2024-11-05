@@ -213,11 +213,13 @@ a#nomorewebsite {
     vertical-align: -.125em;
   }
 
-  }
-
   .animation-box {
     height: 30em;
   }
+
+  }
+
+
 
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {

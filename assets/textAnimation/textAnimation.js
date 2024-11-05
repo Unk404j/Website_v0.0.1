@@ -4,10 +4,6 @@ new Typewriter(txtAnim, {
   deleteSpeed: 20
 })
 .changeDelay(20)
-// .typeString('<')
-// .typeString('?')
-// .typeString('<span class="php-tag">php</span>')
-// .typeString('<span class="php-text"> echo</span>')
 .typeString('<span class="php-tag"> <h1> Julien PABLO</h1></span>')
     .typeString('<ol class="list-unstyled">\n' +
         '        <li><a href="https://www.linkedin.com/in/julien-pablo" target="_blank"><i class="fa-brands fa-linkedin m-2 fa-xl" style="color: #0e76a8"></i>LinkedIn</a></li>\n' +
@@ -15,11 +11,14 @@ new Typewriter(txtAnim, {
         '        <li style="overflow: hidden"><a href="mailto:julien.pablo.pro@gmail.com" target="_blank"><i class="fa-solid fa-envelope m-2 fa-xl" style="color: white;"></i>Écrire un mail !</a></li>' +
         '      </ol>')
     .pauseFor(300)
-    .typeString('<span class="php-text">echo</span>')
+    .typeString('<')
+    .typeString('?')
+    .typeString('<span class="php-tag">php</span>')
+    .typeString('<span class="php-text"> echo</span>')
     .typeString('<span class="php-string"> "Âge : 25 ans";</span>')
     .typeString('<br>')
 .typeString('<span class="php-comment">//</span>')
-.typeString('<span class="php-comment"> Étudiant en développement Full Stack, à Montpellier </span>')
+.typeString('<span class="php-comment"> Étudiant en développement Full Stack, à Montpellier</span>')
 .pauseFor(300)
 .typeString('<br>')
 .typeString('<span class="php-text"> echo</span>')
