@@ -1,30 +1,56 @@
-/* stylelint-disable @stylistic/selector-list-comma-newline-after */
+/* === RESET & GLOBAL STYLES === */
 
-.blog-header-logo {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif
-    /*rtl:Amiri, Georgia, "Times New Roman", serif*/
-  ;
-  font-size: 2.25rem;
+a {
+  color: #d66976;
+  font-weight: bold;
 }
 
+a:hover {
+  color: white;
+}
 
-.animation-box{
-  height: 20em;
+.text-color {
+  color: black;
+  font-weight: bold;
+}
+
+.text-color:hover {
+  color: white !important;
+}
+
+/* === BLOG HEADER === */
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
 }
 
 .blog-header-logo:hover {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+/* === TYPOGRAPHY === */
+
+h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
 }
+
+h1 {
+  font-weight: bold;
+}
+h2 {
+  text-decoration: underline;
+}
+
+
+/* === ANIMATIONS & BOXES === */
+
+.animation-box {
+  height: 25em;
+}
+
+/* === FLEXBOX & HEIGHT UTILITIES === */
 
 .flex-auto {
   flex: 0 0 auto;
@@ -40,121 +66,105 @@ h6 {
   }
 }
 
-/* Pagination */
+/* === BLOG POSTS === */
+
 .blog-pagination {
   margin-bottom: 4rem;
 }
 
-/*
- * Blog posts
- */
 .blog-post {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
-.blog-post-meta {
-  margin-bottom: 1.25rem;
-  color: white;
+.blog-post p {
+  font-weight: bold;
 }
 
-/* My Custom CSS : Julien PABLO*/
+.blog-post b {
+  text-decoration: underline;
+}
 
-/*.color-main {*/
-/*  background-color: #064152;*/
-/*}*/
+  .blog-post-meta {
+  margin-bottom: 1rem;
+  color:#d66976;
+  font-weight: bold;
+}
+
+/* === BACKGROUND STYLES === */
 
 .background-main {
-background-image: url("../../background_test.gif");
-             /* optional, center the image */
-  backdrop-filter: blur(2px)  invert(100%) brightness(135%);
+  background-image: url("../../background_test.png");
+  backdrop-filter: blur(3px) sepia(30%) brightness(105%);
   background-repeat: repeat;
-  background-size: 0.90em auto;
-  color: white;
-
+  background-size: auto;
 }
 
-a {
-  color:black;
-}
+/* === NAVIGATION === */
 
-.nav-item.nav-link{
+.nav-item.nav-link {
   padding-left: 10px;
   padding-right: 10px;
-  color:black;
-  border-radius:0.7em;
-}
-
-.nav-item.nav-link:hover{
-  text-decoration: underline;
-  background: rgba(255,255,255,0.5);
-  backdrop-filter: blur(3px) contrast(75%);
-
-}
-
-.block-bg{
-  background: rgba(200,200,200,0.2);
-  backdrop-filter: blur(3px) contrast(75%);
-}
-/*icons*/
-
-i.fa-solid.fa-circle-up {
   color: black;
-  transition: 0.5s;
+  border-radius: 0.7em;
 }
 
-i.fa-solid.fa-circle-up:hover {
-  color: white;
-  opacity: 0.5;
+.nav-item.nav-link:hover {
+  text-decoration: underline;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px) contrast(75%);
 }
 
-i.fa-solid .fa-envelope {
-  width: 200%;
+/* === BLOCK BACKGROUND === */
+
+.block-bg {
+  background: rgba(200, 200, 200, 0.2);
+  backdrop-filter: blur(3px) contrast(75%);
 }
 
+/* === ANIMATED TEXT === */
 
 #animatedText {
   font-family: 'Courier New', Courier, monospace;
-  /* Police pour ressembler à un éditeur de code */
   color: #368cd6;
   font-size: 1.2rem;
   font-weight: bold;
- /* background-color: #1f1f1f; */
 }
+
+/* === SKILL ICON === */
 
 .skill-icon {
   margin-bottom: 0.5em;
 }
 
-/*PHP CODE COULEUR*/
+/* === PHP CODE COLORS === */
+
 .php-tag {
-  color: #368cd6;
+  color: #368cd6; /* Couleur pour les balises PHP */
 }
 
-/* Couleur pour les balises PHP */
 .php-string {
-  color: #c3602d;
+  color: #c3602d; /* Couleur pour les chaînes de caractères */
 }
 
-/* Couleur pour les chaînes de caractères */
 .php-text {
-  color: #81794c;
+  color: #81794c; /* Couleur pour le texte normal */
 }
 
-/* Couleur pour les commentaires */
 .php-comment {
-  color: #529949;
+  color: #529949; /* Couleur pour les commentaires */
 }
 
+/* === LIST STYLES === */
 
-/* Couleur pour le texte normal */
-
-.text-white{
-  color:white;
+.list-unstyled li a {
+  font-weight: 700;
 }
 
-.text-white a:hover {
-  background-color: grey;
+.list-unstyled li a:hover {
+  color: white !important;
 }
+
+/* === IMAGE STYLES === */
 
 .bd-placeholder-img {
   width: 2em;
@@ -162,26 +172,25 @@ i.fa-solid .fa-envelope {
   background-color: white;
 }
 
-     /* Style pour le lien "nomorewebsite" */
-     a#nomorewebsite {
-      color: gray; /* Couleur du lien */
-    }
-
-     /* Images */
 .main-logo {
   padding: 0.25rem;
-  background-color: #none; /* Remplace par la couleur de fond désirée */
-  /*border: 1px solid ; !* Remplace par la couleur de bordure désirée *!*/
   border-radius: 0.25rem; /* Ajuste selon le rayon souhaité */
   max-width: 100%;
   height: auto;
 }
 
-.main-logo:hover{
+.main-logo:hover {
   backdrop-filter: blur(3px) contrast(75%);
-
 }
-/*index css extraction*/
+
+/* === LINK "NOMOREWEBSITE" === */
+
+a#nomorewebsite {
+  text-decoration: line-through;
+}
+
+/* === PLACEHOLDER IMAGE STYLES === */
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -190,8 +199,10 @@ i.fa-solid .fa-envelope {
   user-select: none;
 }
 
+/* === MEDIA QUERIES === */
+
 @media (max-width: 480px) {
-  .main-menu{
+  .main-menu {
     font-size: 0.70rem;
   }
 }
@@ -206,57 +217,63 @@ i.fa-solid .fa-envelope {
   }
 }
 
-.b-example-divider {
-  width: 100%;
-  height: 3rem;
-  background-color: rgba(0, 0, 0, .1);
-  border: solid rgba(0, 0, 0, .15);
-  border-width: 1px 0;
-  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-}
+/* === UI ELEMENTS === */
 
-.b-example-vr {
-  flex-shrink: 0;
-  width: 1.5rem;
-  height: 100vh;
-}
+/*.b-example-divider {*/
+/*  width: 100%;*/
+/*  height: 3rem;*/
+/*  background-color: rgba(0, 0, 0, .1);*/
+/*  border: solid rgba(0, 0, 0, .15);*/
+/*  border-width: 1px 0;*/
+/*  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);*/
+/*}*/
 
-.bi {
-  vertical-align: -.125em;
-  fill: currentColor;
-}
+/*.b-example-vr {*/
+/*  flex-shrink: 0;*/
+/*  width: 1.5rem;*/
+/*  height: 100vh;*/
+/*}*/
 
-.nav-scroller {
-  position: relative;
-  z-index: 2;
-  height: 2.75rem;
-  overflow-y: hidden;
-}
+/*.bi {*/
+/*  vertical-align: -.125em;*/
+/*  fill: currentColor;*/
+/*}*/
 
-.nav-scroller .nav {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  margin-top: -1px;
-  overflow-x: auto;
-  text-align: center;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
+/*!* === NAV SCROLLER === *!*/
 
-.btn-bd-primary {
-  --bd-violet-bg: #712cf9;
-  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+/*.nav-scroller {*/
+/*  position: relative;*/
+/*  z-index: 2;*/
+/*  height: 2.75rem;*/
+/*  overflow-y: hidden;*/
+/*}*/
 
-  --bs-btn-font-weight: 600;
-  --bs-btn-color: var(--bs-white);
-  --bs-btn-bg: var(--bd-violet-bg);
-  --bs-btn-border-color: var(--bd-violet-bg);
-  --bs-btn-hover-color: var(--bs-white);
-  --bs-btn-hover-bg: #6528e0;
-  --bs-btn-hover-border-color: #6528e0;
-  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-  --bs-btn-active-color: var(--bs-btn-hover-color);
-  --bs-btn-active-bg: #5a23c8;
-  --bs-btn-active-border-color: #5a23c8;
-}
+/*.nav-scroller .nav {*/
+/*  display: flex;*/
+/*  flex-wrap: nowrap;*/
+/*  padding-bottom: 1rem;*/
+/*  margin-top: -1px;*/
+/*  overflow-x: auto;*/
+/*  text-align: center;*/
+/*  white-space: nowrap;*/
+/*  -webkit-overflow-scrolling: touch;*/
+/*}*/
+
+/* === BUTTON STYLES === */
+
+/*.btn-bd-primary {*/
+/*  --bd-violet-bg: #712cf9;*/
+/*  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;*/
+
+/*  --bs-btn-font-weight: 600;*/
+/*  --bs-btn-color: var(--bs-white);*/
+/*  --bs-btn-bg: var(--bd-violet-bg);*/
+/*  --bs-btn-border-color: var(--bd-violet-bg);*/
+/*  --bs-btn-hover-color: var(--bs-white);*/
+/*  --bs-btn-hover-bg: #6528e0;*/
+/*  --bs-btn-hover-border-color: #6528e0;*/
+/*  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);*/
+/*  --bs-btn-active-color: var(--bs-btn-hover-color);*/
+/*  --bs-btn-active-bg: #5a23c8;*/
+/*  --bs-btn-active-border-color: #5a23c8;*/
+/*}*/
