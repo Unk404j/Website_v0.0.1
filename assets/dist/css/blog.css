@@ -109,9 +109,10 @@ h2 {
 }
 
 .nav-item.nav-link:hover {
-  text-decoration: underline;
+  color: white;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(3px) contrast(75%);
+  transition: color 0.25s ease-in-out;
 }
 
 /* === BLOCK BACKGROUND === */
@@ -203,7 +204,7 @@ a#nomorewebsite {
 
 @media (max-width: 480px) {
   .main-menu {
-    font-size: 0.60rem;
+    font-size: 0.40rem;
   }
 
   .m-2.fa-xl{
