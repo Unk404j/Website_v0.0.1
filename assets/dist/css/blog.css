@@ -9,6 +9,13 @@ a:hover {
   color: white;
 }
 
+a#experience {
+  color: black;
+}
+
+a#experience:hover {
+  color: white;
+}
 .text-color {
   color: black;
   font-weight: bold;
@@ -157,10 +164,6 @@ h2 {
 
 /* === LIST STYLES === */
 
-.list-unstyled li a {
-  font-weight: 600;
-}
-
 .list-unstyled li a:hover {
   color: white !important;
 }
@@ -214,7 +217,7 @@ a#nomorewebsite {
   }
 
   .animation-box {
-    height: 30em;
+    height: 32em;
   }
 
   }
