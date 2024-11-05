@@ -203,11 +203,11 @@ a#nomorewebsite {
 
 @media (max-width: 480px) {
   .main-menu {
-    font-size: 0.70rem;
+    font-size: 0.60rem;
   }
 
   .animation-box {
-    height: 45em;
+    height: 35em;
   }
 }
 
